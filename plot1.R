@@ -8,5 +8,5 @@ data$datetime <- strptime(data$datetime, format = "%d/%m/%Y %H:%M:%S")
 ##Convert Global active power into numeric
 data$Global_active_power <- as.numeric(data$Global_active_power)
 png("plot1.png")
-with (data, hist(Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", ylab = "Frequency", mai = "Global Active Power"))
+with (data, hist(Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", ylab = "Frequency", main = "Global Active Power"))
 dev.off()
